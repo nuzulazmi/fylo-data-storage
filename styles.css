@@ -8,6 +8,7 @@
     --VeryDarkBlue: hsl(229, 57%, 11%);
 }
 
+/* Reset Rule */
 * {box-sizing: border-box;margin: 0;}
 
 body {
@@ -19,9 +20,12 @@ body {
     background: url(./images/bg-mobile.png) no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: white;
+    background-color: var(--VeryDarkBlue);
+    color: var(--PaleBlue);
+    transition: 1s ease;
 }
 
+/* Top / Fylo Section */
 figure, section {
     width: 320px;
     background-color: var(--DarkBlue);
@@ -44,33 +48,106 @@ header h1::before {
     content: url(./images/logo.svg);
 }
 
+/* Bottom / Storage Info */
 section {
-    width: max(60%, 320px);
+    width: 320px;
+    height: fit-content;
+    padding: 2.5em 2.5em 3.5em;
     border-radius: 1em;
     margin-top: 1.3em;
     text-align: center;
     position: relative;
 }
 
+/* Storage Indicator */
+section .line-box {
+    background-color: hsl(228, 63%, 19%);
+    padding: 3px;
+    border-radius: 1.5em;
+    margin: 1em 0 0.5em;
+}
+
+section .line-box .inline-box {
+    width: 75%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 1.5em;
+    overflow: hidden;
+}
+
+section .line-box .inline-box .circle {
+    padding: 4px;
+    margin: 3px;
+    float: right;
+    background-color: white;
+    border-radius: 50%;
+}
+/* Storage Indicator end */
+
+/* Float Info */
 section .floating-info {
-    padding: 1em;
+    padding: 1em 1.8em;
+    width: 190px;
     background-color: white;
     color: black;
-    width: 200px;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -3em;
+    left: 20%;
     border-radius: 0.8em;
+    color: var(--GrayishBlue);
+    font-weight: bold;
+    text-align: center;
+    transition: 1s ease;
 }
 
 section .floating-info b {
     font-size: 3em;
-    vertical-align:sub;
+    vertical-align: middle;
+    color: black;
 }
+/* Float Info end */
 
 section .storage-size {
     display: flex;
     justify-content: space-between;
 }
 
+/* Media Query */
+@media (min-width: 1024px) {
+    body {
+        background: url(./images/bg-desktop.png) no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        background-attachment: fixed;
+        background-color: var(--VeryDarkBlue);
+    }
+    .fylo-container {
+        display: flex;
+    }
+    .fylo-container section {
+        width: 600px;
+        margin-top: 3em;
+        margin-left: 2em;
+        text-align: initial;
+        padding: 2.5em 2.5em 3em;
+    }
+    section .floating-info {
+        bottom: initial;
+        left: initial;
+        right: 2.5em;
+        top: -3em;
+        padding: 0.4em;
+        width: 170px;
+    }
+    section .floating-info::after {
+        content: "";
+        border-width: 15px 20px;
+        position: absolute;
+        right: 0;
+        bottom: -15px;
+        border-style: solid;
+        border-color: transparent white transparent transparent;
+    }
+}
+
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); color: white; }
