@@ -49,6 +49,27 @@ section {
     border-radius: 1em;
     margin-top: 1.3em;
     text-align: center;
+    position: relative;
+}
+
+section .floating-info {
+    padding: 1em;
+    background-color: white;
+    color: black;
+    width: 200px;
+    position: fixed;
+    bottom: 0;
+    border-radius: 0.8em;
+}
+
+section .floating-info b {
+    font-size: 3em;
+    vertical-align:sub;
+}
+
+section .storage-size {
+    display: flex;
+    justify-content: space-between;
 }
 
 .attribution { font-size: 11px; text-align: center; }
