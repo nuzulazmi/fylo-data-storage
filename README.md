@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./)
+![Screenshot Example](./design/desktop-preview.jpg)
 
 ### Links
 
@@ -40,30 +40,17 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Grid
+- CSS Flexbox
 - Media Queries
 - Mobile-first workflow
 
 ### What I learned
 
-I've learned several ways to use Grid and Flebox properties in CSS, and I'm implementing them in this project,
-This is an example of CSS Grid I've learned:
-
--CSS
-```
-.example {
-display: grid;
-grid-template-columns: auto auto auto;
-}
-
-display: flex;
-flex-direction: row / column;
-}
-```
-Note: property "grid-template-columns / flex-direction" will only work if the parent element is given the property "display: grid / flex;".
+- 
 
 ### Continued development
 
--If you want to continue this project, feel free to fork it in your github profile.
+- If you want to continue this project, feel free to fork it in your github profile.
 
 ### Useful resources
 
@@ -75,9 +62,13 @@ Here it is:
 
 ## Author
 
-- Website - []() - My website is still on process
+- Website - []() - 
 - Frontend Mentor - [@nuzulazmi](https://www.frontendmentor.io/profile/nuzulazmi)
-- Twitter - []()
+- Twitter - [Nuzulul Azmi](https://twitter.com/Nuzuelazmy)
+- LinkedIn - [Nuzulul Azmi](https://www.linkedin.com/in/nuzuel-azmy-392490246/)
+- Github - [Nuzulul Azmi](https://github.com/nuzulazmi)
+- W3Schools - [Nuzulul Azmi](https://www.w3profile.com/Nuzulul_Azmi)
+- StackOverflow - [nuzulul-azmi](https://stackoverflow.com/users/20308624/nuzulul-azmi)
 
 ## Acknowledgments
 
