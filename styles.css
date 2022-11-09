@@ -1,2 +1,55 @@
+:root {
+    /* Primary */
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    /* Neutral */
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+}
+
+* {box-sizing: border-box;margin: 0;}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background: url(./images/bg-mobile.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+figure, section {
+    width: 320px;
+    background-color: var(--DarkBlue);
+    padding: 2.5em;
+    border-radius: 1em 7em 1em 1em;
+}
+
+figure .icon img {
+    padding: 0.8em;
+    background-color: var(--VeryDarkBlue);
+    margin: 2em 0.5em 0;
+    border-radius: 0.8em;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+header h1::before {
+    content: url(./images/logo.svg);
+}
+
+section {
+    width: max(60%, 320px);
+    border-radius: 1em;
+    margin-top: 1.3em;
+    text-align: center;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
